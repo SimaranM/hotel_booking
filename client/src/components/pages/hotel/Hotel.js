@@ -134,7 +134,7 @@ const Hotel = () => {
                     <b>$945</b> (9 nights)
                   </h2>
                   {/* <button>Reserve or Book Now!</button> */}
-                  <Link to="/property/hotelDetails/reservation" target="_blank" >
+                  <Link to="/property/hotelDetails/reservation">
                     <button className="reservation">Reserve or Book Now!</button>
                   </Link>
 

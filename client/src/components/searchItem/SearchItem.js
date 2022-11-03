@@ -46,7 +46,7 @@ const SearchItem = ({ property, handleClick }) => {
           <span className="siTaxOp">Includes taxes and fees</span>
           <div className="addcartbtn">
             {/* <button className="addButton" onClick={() => handleClick(property)}>Add to Cart</button> */}
-            <Link to="/property/hotelDetails" target="_blank" >
+            <Link to="/property/hotelDetails">
               <button className="siCheckButton">See availability</button>
             </Link>
           </div>
