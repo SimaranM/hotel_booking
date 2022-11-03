@@ -29,7 +29,7 @@ const Navbar = ({ setShow, size }) => {
             <i className={click ? "fas fa-times" : " fas fa-bars"}></i>
           </div>
           <a href="/">
-            <img src='images/logo1.png' alt='' />
+            <img src='../../../Images/logo1.png' alt='' />
           </a>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
