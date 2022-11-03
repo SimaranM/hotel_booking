@@ -81,7 +81,7 @@ export default function Account() {
             <div className="dubblebed">
               <h3>Double Bed</h3>
               <div>
-                <img src="../../../images/hotel_12.jpg" alt="" />
+                <img src="../../images/hotel_12.jpg" alt="" />
                 <span>Description:-</span>
                 <p>Featuring a seasonal outdoor swimming pool,garden and terce, tra lago proides
                    with free WiFi and river views.this accommodation offers a balcony.</p>
@@ -98,7 +98,7 @@ export default function Account() {
             <div className="Kingroom">
               <h3>King Size Bed</h3>
               <div>
-                <img src="../../../images/hotel_9.jpg" alt="" />
+                <img src="../../images/hotel_9.jpg" alt="" />
                 <span>Description:-</span>
                 <p>MUSE is 18 km from the apartment, while Lago di Levico is 7.5 km away. The nearest airport is Bolzano Airport,
                   73 km from Casa Agnese, tra lago e montagna. </p>
@@ -115,7 +115,7 @@ export default function Account() {
             <div className="roomwithbalcon">
               <h3>Room with balcony</h3>
               <div>
-                <img src="../../../images/hotel_14.jpg" alt="" />
+                <img src="../../images/hotel_14.jpg" alt="" />
 
                 <span>Description:-</span>
                 <p>Featuring a seasonal outdoor swimming pool, a garden, and a terrace, Casa Agnese, tra lago e montagna provides
@@ -133,7 +133,7 @@ export default function Account() {
             <div className="singleroom">
               <h3>Single Bed</h3>
               <div>
-                <img src="../../../images/hotel_5.jpg" alt="" />
+                <img src="../../images/hotel_5.jpg" alt="" />
                 <span>Description:-</span>
                 <p>The apartment is equipped with 2 bedrooms, a kitchen with and microwave, and 2 bathrooms with a bidet,
                   a hairdryer machine. Towels and bed in the apartment.</p>
