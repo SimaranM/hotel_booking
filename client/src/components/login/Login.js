@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "../../axiosClient";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 import "./login.css";
+
 
 const Login = () => {
 	const [data, setData] = useState({ email: "", password: ""});
 	const [error, setError] = useState("");
-
+const navigate= useNavigate()
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
 	};
@@ -15,9 +16,9 @@ const Login = () => {
 		e.preventDefault();
 		try {
 			const url = "/auth/login";
-			const { data: res } = await axios.post(url, data);
-			localStorage.setItem("token", res.data);
-			window.location = "/";
+			const { data: res } = await axios.post(url, data,{withCredentials:true});
+			localStorage.setItem("token", JSON.stringify(res))
+			navigate("/")
 		} catch (error) {
 			if (
 				error.response &&

@@ -21,8 +21,8 @@ const Signup = () => {
 		e.preventDefault();
 		try {
 			const url = "/auth/signup";
-			const { data: res } = await axios.post(url, data);
-			navigate("/login");
+			const { data: res } = await axios.post(url, data, {withCredentials:true});
+			navigate("/");
 			console.log(res.message);
 		} catch (error) {
 			if (

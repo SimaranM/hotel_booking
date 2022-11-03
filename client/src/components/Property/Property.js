@@ -51,7 +51,7 @@ const Property = () => {
         ...data,
         image: url,
 
-      });
+      }, { withCredentials: true });
 
     try {
 
