@@ -3,7 +3,7 @@ dotenv.config();
 require('./db');
 const express = require('express');
 const path = require("path");
-
+const coockieParser = require("cookie-parser");
 
 const { userRouter } = require("./routes/user");
 const { propertyRouter } = require("./routes/property");
@@ -23,8 +23,12 @@ const port = process.env.PORT || 3200;
 //middlewares
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }))  //check1
-app.use(cors());
+app.use(cors({
+    origin:["http://localhost:3000"],
+    credentials:true
 
+}));
+app.use(coockieParser())
 app.use(express.static(path.resolve(__dirname, "../client", "build")));
 
 

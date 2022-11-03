@@ -19,12 +19,12 @@ const {
     getProperty,
     deleteProperty,
 }=require("../controllers/property");
-const{verifyOwner}=require("../utils/verification")
+const{verifyOwner, verifyToken}=require("../utils/verification")
 
 const propertyRouter=express.Router();
 
 propertyRouter.route("/").get(getProperties)
-propertyRouter.route("/uploadProperty").post(verifyOwner, addNewProperty);
+propertyRouter.route("/uploadProperty").post(verifyToken, verifyOwner, addNewProperty);
 propertyRouter.route("/:id").get(getProperty).put( updateProperty).delete( deleteProperty);
 
 
