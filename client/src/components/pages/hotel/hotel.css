@@ -1,5 +1,6 @@
-.particular_hotel{
+.particular_hotel {
     overflow: hidden;
+    margin-top: 40px;
 }
 
 .particular_hotel .hotelContainer {
@@ -42,7 +43,7 @@
 }
 .particular_hotel .map {
     font-size: 25px;
-  color: #3bb19b;
+    color: #3bb19b;
 }
 .particular_hotel .hotelDistance {
     color: #3bb19b;
@@ -118,7 +119,7 @@
     cursor: pointer;
     border-radius: 5px;
 }
-.reservation{
+.reservation {
     border: none;
     padding: 10px 20px;
     background-color: #3bb19b;
