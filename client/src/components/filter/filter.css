@@ -1,0 +1,18 @@
+.filterContainer{
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top:20px;
+    background-color: bisque;
+}
+.priceSlide{
+    width:300px;
+}
+
+.dropdownForm{
+    margin:15px;
+}
+
+.ClassNameTest {
+    width:200px;
+    overflow: hidden;
+}

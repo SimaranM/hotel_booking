@@ -1,0 +1,140 @@
+.singlpage_main_img {
+  width: 100%;
+  height: 870px;
+  background-size: cover;
+}
+.main_part{
+  width: 55%;
+  margin: 0 auto;
+}
+.main_part p{
+font-size: 15px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.side_green_content{
+  width: 55%;
+  margin: 0 auto;
+}
+.content a button{
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #3bb19b;
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.back {
+  position: absolute;
+  right: 8%;
+  top: -70px;
+}
+.single-page {
+  position: relative;
+}
+.single-page h1{
+ font-size: 30px;
+ font-weight: 600;
+ text-align: center;
+}
+
+.main-content p {
+  margin: 10px 0 20px 0;
+  color: grey;
+}
+.main-content .para p {
+  margin-right: 10px;
+}
+.main-content h1 {
+  font-size: 30px;
+}
+.main-content img {
+  width: 100%;
+  height: auto;
+}
+
+article .box {
+  background-color: #31b675;
+  padding: 30px;
+  color: white;
+}
+article .box h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+article .box2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background: url("../../public/Images/side-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+article .box3{
+  text-align: center;
+}
+article .box2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 180px;
+  width: 100%;
+}
+article p {
+  font-size: 14px;
+  line-height: 25px;
+}
+article .box2 p {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .single-page .flex {
+    flex-direction: column;
+  }
+}
+/* --------------------------- */
+
+.container_singlepage {
+  max-width: 55%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.inspiration_main_img img {
+  width: 100%;
+  height: 670px;
+  background-size: cover;
+}
+.font_awsome {
+  display: flex;
+  align-items: center;
+}
+.font_awsome p:not(:first-child) {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.main_header h1 {
+  font-size: 52px;
+  font-weight: 800;
+}
+.alldescription h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.alldescription p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

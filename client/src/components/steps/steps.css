@@ -1,0 +1,263 @@
+@tailwind base;
+/* @tailwind components; */
+@tailwind utilities;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #3bb19b;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #3bb19b;
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+.text-green {
+  background-color: #3bb19b;
+}
+.rounded-full {
+  background-color: #3bb19b;
+  color: white;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #3bb19b;
+  }
+}
+
+.backbtn {
+  padding: 10px 20px;
+  color: rgb(81, 81, 81);
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.backbtn:hover {
+  background-color: #3bb19b;
+  color: rgb(255, 255, 255);
+}
+.nextbtn {
+  padding: 10px 20px;
+  font-weight: 900;
+  background-color: #3bb19b;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.shadow-xl {
+  box-shadow: none;
+}
+.mainbox {
+  border: 2px solid #dedede;
+  border-radius: 5px;
+}
+.topround {
+  width: 40px;
+  height: 40px;
+}
+
+.text-primary {
+  color: #0cda90 !important;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #0cda90;
+  border-color: #0cda90;
+}
+.btn-primary {
+  box-shadow: 0 3px 2px rgb(12 218 144 / 20%);
+}
+.details h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  margin-top: 30px;
+}
+.details_input {
+  background: #eaf8f1;
+  padding: 30px;
+}
+.detail_box {
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+}
+.detail_box .nameinput {
+  width: 500px;
+}
+.title {
+  font-size: 15px;
+}
+.email p {
+  color: #3bb19b;
+  font-size: 13px;
+}
+.details_input h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.details_input label {
+  color: #3bb19b;
+  font-size: 16px;
+}
+.requests {
+  margin-top: 40px;
+}
+textarea {
+  margin-top: 20px;
+}
+.requests p {
+  font-size: 18px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.requests span {
+  font-size: 15px;
+  color: rgb(124, 124, 124);
+}
+.review {
+  margin-top: 40px;
+}
+.review p {
+  font-size: 18px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.payment h1{
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+.payment .text_done{
+  font-weight: normal;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  background: #d2edd5;
+  margin: auto;
+  display: inline-block;
+  color: #006607;
+  text-align: left;
+  margin-left: 8px;
+}
+.payment .text_done b{
+  color: #df0000;
+ }
+ .date{
+display: -webkit-inline-box;
+ }
+ .title {
+  font-size: 15px;
+}
+.allrooms_main{
+  display: flex;
+  justify-content: space-between;
+}
+.allrooms_main img{
+ width: 245px;
+ height: 200px;
+ margin-bottom: 20px;
+}
+.allrooms_main h3{
+ font-size: 20px;
+ font-weight: 800;
+ margin-bottom: 10px;
+ }
+.allrooms_main span{
+font-size: 15px;
+font-weight: 700;
+
+padding-bottom: 20px;
+ }
+ .allrooms_main p{
+font-size: 15px;
+
+ }
+.dubblebed{
+  width: 245px;
+ position: relative;
+
+}
+.Kingroom{
+  width: 245px;
+ position: relative;
+
+}
+.roomwithbalcon{
+  width: 245px;
+ position: relative;
+
+}
+.singleroom{
+  width: 245px;
+ position: relative;
+
+}
+.reserve h1{
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin: 20px;
+}
+.room input{
+  width: 20px;
+  height: 20px;
+  
+}
+.room {
+  position: absolute;
+  bottom: 172px;
+  /* left: 3px; */
+  font-size: 18px;
+}

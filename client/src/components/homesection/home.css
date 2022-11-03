@@ -1,0 +1,92 @@
+.homeslider .slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.homeslider .control-btn .prev {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  left: 5%;
+}
+.control-btn button {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+}
+.control-btn i {
+  background-color: #3bb19b;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 30px;
+}
+.homeslider .control-btn .next {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  right: 5%;
+}
+.homeslider .slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+.homeslider .slider img {
+  width: 100%;
+  height: 100%;
+}
+.homeslider .slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+/*--------form-----------*/
+/* .homeslider .slide-form h2 {
+  margin-top: 30px;
+}
+.homeslider .slide-form {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 35%;
+  height: 65vh;
+  border-radius: 5px;
+  color: white;
+}
+.homeslider .slide-form input {
+  margin-top: 20px;
+}
+.homeslider .slide-form .flex_space input:nth-child(odd) {
+  margin-right: 20px;
+}
+.homeslider .slide-form .submit {
+  background: #31b675;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .homeslider .slider {
+    height: 65vh;
+  }
+  .homeslider .slide img {
+    height: 65vh;
+  }
+  .homeslider .slide-form {
+    left: 5%;
+    top: 32%;
+    width: 90%;
+    height: 55vh;
+  }
+} */
