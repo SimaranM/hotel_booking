@@ -46,7 +46,7 @@ const Property = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const result = await axios.post("http://localhost:3200/property/uploadProperty",
+    const result = await axios.post("/property/uploadProperty",
       {
         ...data,
         image: url,
