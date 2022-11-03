@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import SearchItem from "../../searchItem/SearchItem";
 import Filter from "../../filter/Filter";
-import axios from 'axios';
+import axios from '../../../axiosClient';
 import { data } from "autoprefixer";
 import { id } from "date-fns/locale";
 import cartdata from "../../../data";
@@ -27,7 +27,7 @@ const List = ({destination, openDate, date, openOptions, options, handleClick}) 
 
   useEffect(async () => {
     try {
-      await axios.get(`http://localhost:3200/property`)
+      await axios.get(`/property`)
         .then((response) => {
           const property = response.data;
           setAllProperties(property);
@@ -62,7 +62,7 @@ const List = ({destination, openDate, date, openOptions, options, handleClick}) 
 
 
   // ---------------------------------------------------------------all property------------------
-  let filteredProperties;
+  let filteredProperties = [...allProperties];
   //const filtered=allProperties && allProperties.map(property=> <SearchItem key={property._id}  property={property}/>);
   if (!destination) {
     filteredProperties = allProperties;

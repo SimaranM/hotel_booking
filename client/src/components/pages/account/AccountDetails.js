@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axios from "../../../axiosClient";
 import { Link, useNavigate } from "react-router-dom";
 import "./AccountDetails.css";
 
@@ -8,7 +8,7 @@ const AccountDetails=(data)=>{
     const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3200/users/:id";
+			const url = "/users/:id";
 			const { data: res } = await axios.put(url, data);
 			navigate("/");
 			console.log(res);

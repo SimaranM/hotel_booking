@@ -25,7 +25,7 @@ const propertyRouter=express.Router();
 
 propertyRouter.route("/").get(getProperties)
 propertyRouter.route("/uploadProperty").post(verifyOwner, addNewProperty);
-propertyRouter.route("/:id").get(getProperty).put(verifyOwner, updateProperty).delete(verifyOwner, deleteProperty);
+propertyRouter.route("/:id").get(getProperty).put( updateProperty).delete( deleteProperty);
 
 
 
