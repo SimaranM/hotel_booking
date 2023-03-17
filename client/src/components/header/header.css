@@ -1,9 +1,5 @@
 .header {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  align-items: center;
-  /* height: 685px; */
+   /* height: 685px; */
 }
 
 .header .headerContainer {
@@ -20,7 +16,8 @@
   padding: 32px 0px;
   border-radius: 5px;
   position: absolute;
-  bottom: 360px;
+  top: 40%;
+  left: 25%;
   width: 100%;
   max-width: 1024px;
 }
